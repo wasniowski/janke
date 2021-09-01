@@ -929,6 +929,115 @@ h3 {
   margin: 0 auto;
 }
 
+.about-me #navigation .wrapper {
+  background: #1351E1;
+}
+.about-me #navigation nav ul li a {
+  color: #FFFFFF;
+}
+.about-me #top {
+  background: url("../images/page-aboutme-top-bg.svg") calc(50% + 300px) calc(100% + 18px) no-repeat #1351E1;
+  color: #FFFFFF;
+}
+.about-me #top .container {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-me #top .container .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-me #top .container .lead {
+  max-width: 65%;
+}
+.about-me #dates {
+  background: url("../images/page-aboutme-dates-bg.svg") calc(50% - 430px) top no-repeat;
+  padding: 60px 0;
+}
+.about-me #dates .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.about-me #dates .container:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  bottom: 160px;
+  width: 1px;
+  border-left: 1px dotted #070C1C;
+}
+.about-me #dates .container article {
+  width: 50%;
+  position: relative;
+}
+.about-me #dates .container article:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 50%;
+  height: 1px;
+  background: #FF5C32;
+}
+.about-me #dates .container article:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #FF5C32;
+}
+.about-me #dates .container article h3 {
+  color: #FF5C32;
+  font-family: Krona One;
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 400;
+  margin-left: -3px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  background: #FFFFFF;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+.about-me #dates .container article img {
+  margin: 0 0 20px 0;
+}
+.about-me #dates .container article:nth-child(even) {
+  align-self: flex-start;
+  padding-right: 40px;
+}
+.about-me #dates .container article:nth-child(even):before {
+  right: 0;
+}
+.about-me #dates .container article:nth-child(even):after {
+  right: -5px;
+}
+.about-me #dates .container article:nth-child(even) p {
+  margin-left: 140px;
+}
+.about-me #dates .container article:nth-child(even) h3 {
+  margin-left: 130px;
+}
+.about-me #dates .container article:nth-child(odd) {
+  align-self: flex-end;
+  padding-left: 40px;
+}
+.about-me #dates .container article:nth-child(odd):before {
+  left: 0;
+}
+.about-me #dates .container article:nth-child(odd):after {
+  left: -5px;
+}
+.about-me #dates .container article:nth-child(odd) h3 {
+  margin-left: -10px;
+}
+
 html {
   color: #070C1C;
   font-size: 20px;
@@ -998,31 +1107,29 @@ p {
 .homepage #navigation .wrapper {
   background: #1351E1;
 }
-
 .homepage #navigation nav ul li a {
   color: #FFFFFF;
 }
-
-#top {
+.homepage #top {
   position: relative;
   background: #1351E1;
   color: #FFFFFF;
 }
-#top .container {
+.homepage #top .container {
   position: relative;
 }
 @media only screen and (min-width: 768px) {
-  #top .container {
+  .homepage #top .container {
     display: grid;
     grid-template-columns: 790px 1fr;
   }
 }
 @media only screen and (min-width: 992px) {
-  #top .container {
+  .homepage #top .container {
     min-height: 650px;
   }
 }
-#top .container:before {
+.homepage #top .container:before {
   display: block;
   content: "";
   width: 1226px;
@@ -1034,7 +1141,7 @@ p {
   background-size: 1226px 663px;
   z-index: 2;
 }
-#top .container:after {
+.homepage #top .container:after {
   display: block;
   content: "";
   width: 1211px;
@@ -1046,22 +1153,22 @@ p {
   background-size: 1211px 650px;
   z-index: 1;
 }
-#top .container .slogan {
+.homepage #top .container .slogan {
   position: relative;
   z-index: 3;
 }
 @media only screen and (min-width: 992px) {
-  #top .container .slogan {
+  .homepage #top .container .slogan {
     padding-top: 20px;
   }
 }
-#top .container .slogan h2 {
+.homepage #top .container .slogan h2 {
   position: relative;
   font-size: 84px;
   line-height: 96px;
   font-weight: 400;
 }
-#top .container .slogan h2:before {
+.homepage #top .container .slogan h2:before {
   content: "";
   display: block;
   width: 300px;
@@ -1071,27 +1178,27 @@ p {
   right: 105px;
   background: #FFFFFF;
 }
-#top .container .slogan h3 {
+.homepage #top .container .slogan h3 {
   font-family: "Krona One", sans-serif;
   font-size: 112px;
   line-height: 128px;
   margin: 20px 0 20px -2px;
 }
-#top .container .picture {
+.homepage #top .container .picture {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-#top .container .picture img {
+.homepage #top .container .picture img {
   position: relative;
   z-index: 3;
 }
 @media only screen and (min-width: 992px) {
-  #top .container .picture img {
+  .homepage #top .container .picture img {
     transform: translateX(34px);
   }
 }
-#top .container .dot {
+.homepage #top .container .dot {
   position: absolute;
   bottom: -45px;
   right: 300px;

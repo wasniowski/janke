@@ -11,6 +11,8 @@
 @import "helpers/helpers";
 @import "helpers/page-helpers";
 
+@import "pages/o-mnie";
+
 html {
   color: $text-color-dark;
   font-size: 20px;
@@ -79,110 +81,114 @@ p {
   padding: 0;
 }
 
-.homepage #navigation .wrapper {
-  background: $color-blue-dark;
-}
+.homepage {
+  #navigation {
+    .wrapper {
+      background: $color-blue-dark;
+    }
 
-.homepage #navigation nav ul li a {
-  color: $color-white;
-}
+    nav ul li a {
+      color: $color-white;
+    }
+  }
 
-#top {
-  position: relative;
-  background: $color-blue-dark;
-  color: $color-white;
-
-  .container {
+  #top {
     position: relative;
+    background: $color-blue-dark;
+    color: $color-white;
 
-    @include breakpoint(small) {
-      display: grid;
-      grid-template-columns: 790px 1fr;
-    }
-    @include breakpoint(medium) {
-      min-height: 650px;
-    }
-
-    &:before {
-      display: block;
-      content: "";
-      width: 1226px;
-      height: 633px;
-      position: absolute;
-      bottom: 0;
-      right: -130px;
-      background: url("../images/top-bg1.svg") right top no-repeat;
-      background-size: 1226px 663px;
-      z-index: 2;
-    }
-
-    &:after {
-      display: block;
-      content: "";
-      width: 1211px;
-      height: 650px;
-      position: absolute;
-      bottom: 0;
-      right: -130px;
-      background: url("../images/top-bg2.svg") right top no-repeat;
-      background-size: 1211px 650px;
-      z-index: 1;
-    }
-
-    .slogan {
+    .container {
       position: relative;
-      z-index: 3;
 
+      @include breakpoint(small) {
+        display: grid;
+        grid-template-columns: 790px 1fr;
+      }
       @include breakpoint(medium) {
-        padding-top: 20px;
+        min-height: 650px;
       }
 
-      h2 {
-        position: relative;
-        font-size: 84px;
-        line-height: 96px;
-        font-weight: 400;
-
-        &:before {
-          content: "";
-          display: block;
-          width: 300px;
-          height: 2px;
-          position: absolute;
-          bottom: 35px;
-          right: 105px;
-          background: $color-white;
-        }
+      &:before {
+        display: block;
+        content: "";
+        width: 1226px;
+        height: 633px;
+        position: absolute;
+        bottom: 0;
+        right: -130px;
+        background: url("../images/top-bg1.svg") right top no-repeat;
+        background-size: 1226px 663px;
+        z-index: 2;
       }
 
-      h3 {
-        font-family: "Krona One", sans-serif;
-        font-size: 112px;
-        line-height: 128px;
-        margin: 20px 0 20px -2px;
+      &:after {
+        display: block;
+        content: "";
+        width: 1211px;
+        height: 650px;
+        position: absolute;
+        bottom: 0;
+        right: -130px;
+        background: url("../images/top-bg2.svg") right top no-repeat;
+        background-size: 1211px 650px;
+        z-index: 1;
       }
-    }
 
-    .picture {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-
-      img {
+      .slogan {
         position: relative;
         z-index: 3;
 
         @include breakpoint(medium) {
-          transform: translateX(34px);
+          padding-top: 20px;
+        }
+
+        h2 {
+          position: relative;
+          font-size: 84px;
+          line-height: 96px;
+          font-weight: 400;
+
+          &:before {
+            content: "";
+            display: block;
+            width: 300px;
+            height: 2px;
+            position: absolute;
+            bottom: 35px;
+            right: 105px;
+            background: $color-white;
+          }
+        }
+
+        h3 {
+          font-family: "Krona One", sans-serif;
+          font-size: 112px;
+          line-height: 128px;
+          margin: 20px 0 20px -2px;
         }
       }
-    }
 
-    .dot {
-      position: absolute;
-      bottom: -45px;
-      right: 300px;
-      z-index: 10;
+      .picture {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        img {
+          position: relative;
+          z-index: 3;
+
+          @include breakpoint(medium) {
+            transform: translateX(34px);
+          }
+        }
+      }
+
+      .dot {
+        position: absolute;
+        bottom: -45px;
+        right: 300px;
+        z-index: 10;
+      }
     }
   }
 }
