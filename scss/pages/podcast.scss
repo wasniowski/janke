@@ -1,0 +1,175 @@
+@import "../mixins/breakpoints";
+@import "../common/variables";
+
+.podcast {
+  #navigation {
+    .wrapper {
+      background: $color-orange;
+
+      .container .logo .svg-bg {
+        background: url("../images/logo-black.svg") center center no-repeat;
+      }
+    }
+
+    nav ul li a {
+      color: $text-color-dark;
+    }
+  }
+
+  #top {
+    background: url("../images/page-podcast-top-bg.svg") calc(50% + 230px)
+      calc(100% + 18px) no-repeat $color-orange;
+    color: $text-color-dark;
+
+    .container {
+      min-height: 620px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 80px;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .image {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+        .dot {
+          position: absolute;
+          top: 150px;
+          left: 0;
+          background: $color-yellow;
+          color: $text-color-dark;
+        }
+      }
+    }
+  }
+
+  #podcasts {
+    background: url("../images/page-aboutme-dates-bg.svg") calc(50% - 430px) top no-repeat;
+    padding: 120px 0 60px 0;
+
+    .container {
+      max-width: 630px;
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        article{
+          margin-bottom: 50px;
+
+          &:nth-child(even) {
+            transform: translateX(80px);
+          }
+        }
+      }
+    }
+  }
+
+  #listen-on {
+    .container {
+      background: $color-beige;
+      min-height: 140px;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url("../images/page-podcast-listen-on-bg.svg") right bottom no-repeat ;
+        width: 459px;
+        height: 279px;
+      }
+
+      .wrapper {
+        max-width: 630px;
+        padding: 50px 0;
+        margin: 0 auto;
+        position: relative;
+
+        &:before {
+          content: '';
+          height: 1px;
+          border-top: 1px dotted $text-color-dark;
+          position: absolute;
+          top: 68px;
+          left: 0;
+          right: 0;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 800;
+          letter-spacing: 0.06em;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          display: inline-block;
+          padding-right: 10px;
+          background: $color-beige;
+          position: relative;
+          z-index: 10;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            margin: 0;
+            padding: 0;
+
+            &:before {
+              display: none;
+            }
+
+            a {
+              text-decoration: none;
+              color: $text-color-dark;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              max-width: 100px;
+              min-width: 80px;
+              text-align: center;
+
+              img {
+                margin-bottom: 10px;
+              }
+
+              span {
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
