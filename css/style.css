@@ -678,15 +678,11 @@ h3 {
 }
 #navigation nav ul li a {
   text-decoration: none;
+  border: none;
   color: #FFFFFF;
   font-weight: 500;
-  transition: color 0.7s;
+  transition: color 0.4s;
   white-space: nowrap;
-}
-@media only screen and (min-width: 768px) {
-  #navigation nav ul li a {
-    color: #070C1C;
-  }
 }
 #navigation nav ul li a:hover {
   color: #FF5C32;
@@ -1338,6 +1334,36 @@ h3 {
   height: auto;
 }
 
+.institute #navigation .wrapper {
+  background: #E8E8E8;
+}
+.institute #navigation .wrapper .container .logo .svg-bg {
+  background: url("../images/logo-black.svg") center center no-repeat;
+}
+.institute #navigation nav ul li a {
+  color: #070C1C;
+}
+.institute #navigation nav ul li a:hover {
+  color: #FF5C32;
+}
+.institute .article.freedom-institute {
+  background: url("../images/page-article-bg.svg") calc(50% - 200px) top no-repeat #E8E8E8;
+  padding-top: 60px;
+}
+.institute .article.leadership-school {
+  background: url("../images/page-article-reverse-bg.svg") calc(50% + 200px) bottom no-repeat #E8E8E8;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.institute .article .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
+}
+.institute .article .wrapper p {
+  margin-bottom: 32px;
+}
+
 html {
   color: #070C1C;
   font-size: 20px;
@@ -1355,7 +1381,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-rendering: geometricPrecision;
   margin: 0;
   padding: 0;
 }
@@ -1390,9 +1415,9 @@ body {
 
 a {
   color: #1351E1;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #1351E1;
+  text-decoration: none;
+  border-bottom: 2px dotted #1351E1;
+  font-weight: 600;
 }
 
 p {

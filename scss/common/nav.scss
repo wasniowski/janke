@@ -178,13 +178,11 @@
 
         a {
           text-decoration: none;
+          border: none;
           color: $color-white;
           font-weight: 500;
-          transition: color 0.7s;
+          transition: color 0.4s;
           white-space: nowrap;
-          @include breakpoint(small) {
-            color: $text-color-dark;
-          }
 
           &:hover {
             color: $color-orange;

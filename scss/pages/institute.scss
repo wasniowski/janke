@@ -1,0 +1,45 @@
+@import "../mixins/breakpoints";
+@import "../common/variables";
+
+.institute {
+  #navigation {
+    .wrapper {
+      background: $color-silver;
+
+      .container .logo .svg-bg {
+        background: url("../images/logo-black.svg") center center no-repeat;
+      }
+    }
+
+    nav ul li a {
+      color: $text-color-dark;
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  .article {
+    &.freedom-institute {
+      background: url("../images/page-article-bg.svg") calc(50% - 200px) top no-repeat $color-silver;
+      padding-top: 60px;
+    }
+
+    &.leadership-school {
+      background: url("../images/page-article-reverse-bg.svg") calc(50% + 200px) bottom no-repeat $color-silver;
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 80px;
+
+      p {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
