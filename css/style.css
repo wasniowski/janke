@@ -1295,6 +1295,49 @@ h3 {
   transform: translateX(50px);
 }
 
+.article #navigation .wrapper {
+  background: #FBFAF5;
+}
+.article #navigation .wrapper .container .logo .svg-bg {
+  background: url("../images/logo-black.svg") center center no-repeat;
+}
+.article #navigation nav ul li a {
+  color: #070C1C;
+}
+.article #article {
+  background: url("../images/page-article-bg.svg") calc(50% - 200px) top no-repeat #FBFAF5;
+  padding: 60px 0;
+}
+.article #article .container {
+  position: relative;
+}
+.article #article img {
+  position: absolute;
+  top: -40px;
+  right: -130px;
+}
+.article #article .wrapper {
+  max-width: 660px;
+}
+.article #article .wrapper .lead {
+  margin-bottom: 60px;
+}
+.article #article .wrapper article p {
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+.article #article .wrapper article p strong {
+  font-size: 20px;
+  font-weight: 800;
+}
+.article #article .wrapper article img {
+  position: static;
+  margin-bottom: 32px;
+  width: 100%;
+  height: auto;
+}
+
 html {
   color: #070C1C;
   font-size: 20px;

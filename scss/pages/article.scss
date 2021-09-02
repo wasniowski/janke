@@ -1,0 +1,61 @@
+@import "../mixins/breakpoints";
+@import "../common/variables";
+
+.article {
+  #navigation {
+    .wrapper {
+      background: $color-beige;
+
+      .container .logo .svg-bg {
+        background: url("../images/logo-black.svg") center center no-repeat;
+      }
+    }
+
+    nav ul li a {
+      color: $text-color-dark;
+    }
+  }
+
+  #article {
+    background: url("../images/page-article-bg.svg") calc(50% - 200px) top no-repeat $color-beige;
+    padding: 60px 0;
+
+    .container{
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      top: -40px;
+      right: -130px;
+    }
+
+    .wrapper {
+      max-width: 660px;
+
+      .lead {
+        margin-bottom: 60px;
+      }
+
+      article {
+        p{
+          font-size: 16px;
+          line-height: 32px;
+          margin-bottom: 32px;
+
+          strong {
+            font-size: 20px;
+            font-weight: 800;
+          }
+        }
+
+        img {
+          position: static;
+          margin-bottom: 32px;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
