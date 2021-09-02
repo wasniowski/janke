@@ -1075,6 +1075,8 @@ h3 {
 }
 .podcast #top .container .image .dot {
   position: absolute;
+  width: 190px;
+  height: 190px;
   top: 150px;
   left: 0;
   background: #E2FF6D;
@@ -1177,6 +1179,80 @@ h3 {
 .podcast #listen-on .container .wrapper ul li a span {
   font-size: 16px;
   line-height: 24px;
+}
+
+.publications #navigation .wrapper {
+  background: #E2FF6D;
+}
+.publications #navigation .wrapper .container .logo .svg-bg {
+  background: url("../images/logo-black.svg") center center no-repeat;
+}
+.publications #navigation nav ul li a {
+  color: #070C1C;
+}
+.publications #top {
+  background: url("../images/page-publications-top-bg.svg") calc(50% + 300px) calc(100% + 18px) no-repeat #E2FF6D;
+  color: #070C1C;
+}
+.publications #top .container {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.publications #top .container .title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.publications #top .container .lead {
+  max-width: 45%;
+}
+.publications .bg {
+  background: #FBFAF5;
+  padding-top: 100px;
+}
+.publications #publications-books {
+  background: url("../images/page-publications-books-bg.svg") center top no-repeat;
+  margin-bottom: 60px;
+  min-height: 360px;
+}
+.publications #publications-articles {
+  padding-bottom: 120px;
+}
+.publications #publications-articles .container {
+  padding: 0;
+}
+.publications #publications-articles .lead {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.publications #publications-articles .wrapper article {
+  max-width: 100%;
+  position: relative;
+  border-bottom: 1px solid #1351E1;
+}
+.publications #publications-articles .wrapper article span {
+  color: #FF5C32;
+}
+.publications #publications-articles .wrapper article h3 {
+  color: #070C1C;
+  margin: 10px 0 10px -2px;
+}
+.publications #publications-articles .wrapper article p {
+  font-size: 18px;
+  color: #070C1C;
+}
+.publications #publications-articles .wrapper article img {
+  display: none;
+}
+.publications #publications-articles .wrapper article:hover img {
+  display: block;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  z-index: 10;
 }
 
 html {
