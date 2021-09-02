@@ -32,6 +32,9 @@
       align-items: center;
 
       a {
+        text-decoration: none;
+        border: 0;
+
         @include breakpoint(medium) {
           margin-right: 50px;
         }
@@ -51,9 +54,8 @@
         margin-left: 20px;
         font-size: 16px;
         line-height: 21px;
-        text-decoration: underline;
-        text-decoration-style: dotted;
-        text-decoration-color: $text-color-dark;
+        text-decoration: none;
+        border-color: $text-color-dark;
         color: $text-color-dark;
       }
     }

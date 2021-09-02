@@ -37,7 +37,7 @@
     input,
     textarea {
       border: 1px solid $color-grey-line;
-      background: none;
+      background: $color-white;
       padding: 16px 32px;
       outline: none;
       width: 100%;
@@ -91,8 +91,8 @@
       left: 22px;
       cursor: text;
       padding: 0 10px;
-      color: $text-color-dark;
-      font-size: 18px;
+      color: $color-grey;
+      font-size: 14px;
       line-height: 32px;
     }
     &.filled {

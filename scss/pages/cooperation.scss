@@ -1,0 +1,126 @@
+@import "../mixins/breakpoints";
+@import "../common/variables";
+
+.cooperation {
+  #navigation {
+    .wrapper {
+      background: $color-silver;
+
+      .container .logo .svg-bg {
+        background: url("../images/logo-black.svg") center center no-repeat;
+      }
+    }
+
+    nav ul li a {
+      color: $text-color-dark;
+
+      &:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  #top {
+    background: url("../images/page-cooperation-top-bg.svg") calc(50% + 300px)
+      calc(100% + 18px) no-repeat $color-silver;
+
+    .container {
+      min-height: 420px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .lead {
+        max-width: 85%;
+      }
+    }
+  }
+
+  .articles {
+    background: $color-beige;
+
+    .container {
+      display: grid;
+      grid-template-columns: 490px 490px;
+      grid-column-gap: 110px;
+
+      article {
+        p {
+          margin-bottom: 32px;
+          position: relative;
+          z-index: 10;
+        }
+
+        h2 {
+          position: relative;
+          z-index: 10;
+        }
+
+        &.left {
+          padding-top: 50px;
+
+          .image {
+            position: relative;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: -235px;
+              left: -130px;
+              width: 620px;
+              height: 824px;
+              background: url("../images/page-cooperation-left.svg") center center no-repeat;
+            }
+
+            img {
+              transform: translateX(-130px);
+              position: relative;
+              z-index: 10;
+            }
+          }
+        }
+
+        &.right {
+          padding-top: 200px;
+
+          .image {
+            position: relative;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: -180px;
+              left: 20px;
+              width: 562px;
+              height: 762px;
+              background: url("../images/page-cooperation-right.svg") center center no-repeat;
+            }
+
+            img {
+              transform: translateX(110px);
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #pre-footer {
+    background: url("../images/page-cooperation-contact-bg.svg") calc(50% + 210px) -10px no-repeat;
+
+    .container {
+      display: block;
+    }
+
+    .contact {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
+}
