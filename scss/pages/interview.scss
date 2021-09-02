@@ -1,0 +1,58 @@
+@import "../mixins/breakpoints";
+@import "../common/variables";
+
+.interview {
+  #navigation {
+    .wrapper {
+      background: $color-beige;
+
+      .container .logo .svg-bg {
+        background: url("../images/logo-black.svg") center center no-repeat;
+      }
+    }
+
+    nav ul li a {
+      color: $text-color-dark;
+    }
+  }
+
+  #article {
+    background: url("../images/page-article-bg.svg") calc(50% - 200px) top no-repeat $color-beige;
+    padding: 60px 0;
+
+    .container{
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      top: -40px;
+      right: -130px;
+    }
+
+    .wrapper {
+      max-width: 660px;
+
+      .lead {
+        margin-bottom: 60px;
+      }
+
+      article {
+        p {
+          margin-bottom: 32px;
+
+          &:nth-child(odd) {
+            color: $color-blue-dark;
+            font-weight: 800;
+          }
+
+          &:nth-child(even) {
+            font-size: 16px;
+            line-height: 28px;
+            transform: translateX(50px);
+          }
+        }
+      }
+    }
+  }
+}
